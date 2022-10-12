@@ -5,7 +5,7 @@ on: [push]
 jobs:
   auto-revision:
     name: "Auto Revision"
-    runs-on: [self-hosted, kubernetes]
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Your Repo
         uses: actions/checkout@v3
