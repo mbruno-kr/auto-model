@@ -1,5 +1,6 @@
 {
   "plugins": [
+    ["upload-assets", ["./README.md"]],
     "git-tag"
   ],
   "owner": "mbruno-kr",
