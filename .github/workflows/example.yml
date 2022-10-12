@@ -1,0 +1,20 @@
+name: Auto Revision
+
+on: [push]
+
+jobs:
+  auto-revision:
+    name: "Auto Revision"
+    runs-on: [self-hosted, kubernetes]
+    steps:
+      - name: Checkout Your Repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.ADMIN_PAT }}
+          
+      - name: Run Auto
+        id: auto
+        uses: mbround18/auto@main
+        with:
+          token: ${{ secrets.ADMIN_PAT }}
