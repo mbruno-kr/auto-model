@@ -1,0 +1,9 @@
+{
+  "plugins": [
+    "git-tag"
+  ],
+  "owner": "mbruno-kr",
+  "repo": "auto-model",
+  "name": "mbruno-kr",
+  "email": "no-reply@kroger.com"
+}
